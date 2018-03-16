@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- <script src="./qs.js"></script> -->
+    <script src='./dist/app.bundle.js'></script>
+    <script src="./webcam.js" charset="utf-8"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- <script src="./auth.js"></script> -->
+    <script>
+   </script>
+</head>
+
+<body>
+    <!-- <input type="file" id="img_upload" />
+    <textarea id="base64_code" rows="30" cols="360"></textarea>
+    <button id="btn1">提交</button> -->
+    <!-- <p id="img_area"></p> -->
+    <!-- <p>
+        <strong>Camera:</strong>
+    </p>
+    <br />
+    <p>
+        <strong>Video:</strong>
+    </p>
+    <input type="file" accept="video/*;capture=camcorder"> -->
+    <input type="file" accept="image/*" id="img_upload" hidden>
+    <video id="video" width="320" height="240" autoplay style="width:320;height:240;" hidden ></video>
+    <button id="snap" hidden>分析</button>
+    <canvas id="canvas" width="320" height="240" hidden ></canvas>
+    <div id="results">Your captured image will appear here...</div>
+
+	<h1>WebcamJS Test Page</h1>
+	<h3>Demonstrates simple 320x240 capture &amp; display</h3>
+
+	<div id="my_camera"></div>
+    <!-- <div id="my_camera" style="width:320px; height:240px;"></div>
+    <div id="my_result"></div>
+    <a href="javascript:void(take_snapshot())">Take Snapshot</a> -->
+</body>
+
+</html
